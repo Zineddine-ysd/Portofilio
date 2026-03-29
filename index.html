@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Zineddine Yessad</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg3d" id="bg3d"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#top" aria-label="Retour en haut">
+          <div class="logo"></div>
+          <div>
+            <strong>Zineddine Yessad</strong>
+            <span>Genie Logiciel (3e annee) - Bejaia</span>
+          </div>
+        </a>
+        <nav class="nav">
+          <a class="pill" href="#about" title="A propos">
+            <span>About</span>
+            <small>bio</small>
+          </a>
+          <a class="pill" href="#projects" title="Projets">
+            <span>Projects</span>
+            <small>CRUD</small>
+          </a>
+          <a class="pill" href="#skills" title="Skills">
+            <span>Skills</span>
+            <small>lang/tools</small>
+          </a>
+          <a class="pill" href="#contact" title="Contact">
+            <span>Contact</span>
+            <small>email</small>
+          </a>
+         
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="top">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="kicker">
+              <span class="dot"></span>
+              <span id="hero-kicker">Chargement...</span>
+            </div>
+            <h1 id="hero-title">
+              <span id="hero-title-main">Chargement...</span>
+              <span class="grad-text" id="hero-title-grad"></span>
+            </h1>
+            <p class="subtitle" id="hero-subtitle">Chargement...</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects" id="cta-projects">
+                <span>Voir les projets</span>
+                <span class="kbd">Scroll</span>
+              </a>
+          
+            </div>
+          </div>
+
+          <aside class="glass stats" aria-label="Statistiques">
+            <div class="stat">
+              <div class="v" id="stat-projects">0</div>
+              <div class="l">Projets</div>
+            </div>
+            <div class="stat">
+              <div class="v" id="stat-infos">0</div>
+              <div class="l">Infos</div>
+            </div>
+            <div class="stat">
+              <div class="v" id="stat-langs">0</div>
+              <div class="l">Langages</div>
+            </div>
+            <div class="stat">
+              <div class="v" id="stat-tools">0</div>
+              <div class="l">Outils</div>
+            </div>
+
+            <div class="matrix glass" style="grid-column: 1 / -1;">
+              <h3>Technos mises en avant</h3>
+              <div class="chips" id="chips"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">About</h2>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h4 id="about-title">Chargement...</h4>
+            <p id="about-body" class="body">Chargement...</p>
+          </div>
+          <div class="list" id="about-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Projets</h2>
+          </div>
+        </div>
+        <div class="list" id="projects-list"></div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Langages & Outils</h2>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h4>Langages</h4>
+            <div class="chips" id="langs"></div>
+          </div>
+          <div class="card">
+            <h4>Outils</h4>
+            <div class="chips" id="tools"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Contact</h2>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h4 id="contact-title">Chargement...</h4>
+            <p id="contact-body" style="margin-top:8px; word-break:break-word;">Chargement...</p>
+          </div>
+          <div class="card">
+            <h4>Liens</h4>
+            <div class="chips" id="contact-links"></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+      
+      </footer>
+    </main>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
+

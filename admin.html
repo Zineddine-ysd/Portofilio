@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Portofolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg3d" id="bg3d"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="./index.html" aria-label="Retour au portfolio">
+          <div class="logo"></div>
+          <div>
+            <strong>Admin</strong>
+           
+          </div>
+        </a>
+        <nav class="nav">
+          <a class="pill" href="./index.html" title="Retour">
+            <span>Portfolio</span>
+            <small>live</small>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container admin" id="app">
+      <div class="admin-head">
+        <div>
+          <h2 class="section-title" style="margin:0">Espace admin</h2>
+          <div class="section-sub">Ajoute, modifie et supprime Projects / Infos / Langages / Outils.</div>
+        </div>
+        <div id="admin-user" class="help"></div>
+      </div>
+
+      <div class="admin-grid">
+        <section class="card" aria-label="Connexion admin" id="loginBox">
+          <h4 style="margin:0 0 10px">Connexion</h4>
+          <div class="form">
+            <div class="field">
+              <label for="email">Email admin</label>
+              <input class="control" id="email" type="email" placeholder="admin@EXEMPLE.COM" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="password">Mot de passe</label>
+              <input class="control" id="password" type="password" placeholder="••••••••" autocomplete="current-password" />
+            </div>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <button class="btn btn-primary" id="loginBtn" type="button">Se connecter</button>
+              <button class="btn" id="logoutBtn" type="button" style="display:none">Se déconnecter</button>
+            </div>
+            <div id="authMsg" class="msg" style="display:none"></div>
+          </div>
+        </section>
+
+        <section class="card" aria-label="CRUD admin" id="crudBox" style="display:none">
+          <div class="tabs">
+            <div class="tab active" data-tab="projects">Projets</div>
+            <div class="tab" data-tab="info_items">Infos</div>
+            <div class="tab" data-tab="languages">Langages</div>
+            <div class="tab" data-tab="tools">Outils</div>
+          </div>
+          <div class="sep"></div>
+
+          <div class="grid-2" style="grid-template-columns: 1fr 1fr;">
+            <div>
+              <h4 style="margin:0 0 10px" id="formTitle">Ajouter</h4>
+              <form id="form" class="form">
+                <div id="formFields"></div>
+                <div style="display:flex; gap:12px; flex-wrap:wrap;">
+                  <button class="btn btn-primary" type="submit" id="submitBtn">Enregistrer</button>
+                  <button class="btn" type="button" id="cancelBtn" style="display:none">Annuler</button>
+                </div>
+              </form>
+              <div id="formMsg" class="msg" style="margin-top:12px; display:none"></div>
+            </div>
+            <div>
+              <h4 style="margin:0 0 10px">Liste</h4>
+              <div id="tableBox"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="./js/admin.js"></script>
+  </body>
+</html>
+
